@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aischi's Homepage</title>
+    <style>
+      body {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        display: grid;
+        place-content: center;
+        background-color: #000;
+      }
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="video" src="rick.mp4" autoplay muted></video>
+    <script>
+      const play = () => (document.querySelector("video").muted = false);
+      document.addEventListener("keydown", play);
+      document.addEventListener("click", play);
+      document.addEventListener("mousedown", play);
+    </script>
+  </body>
+</html>
