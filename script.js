@@ -101,4 +101,4 @@ function Animate() {
   }
 }
 
-document.addEventListener("keypress", Animate);
+setTimeout(Animate, 2000);
